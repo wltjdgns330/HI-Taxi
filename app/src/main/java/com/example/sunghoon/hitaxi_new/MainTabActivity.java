@@ -22,9 +22,11 @@ public class MainTabActivity extends TabActivity {
         tabHost.getTabWidget().getChildAt(0).setBackgroundColor(Color.parseColor("#c8c8c8"));
 
         TabHost.TabSpec tabSpecTab2 = tabHost.newTabSpec("TAB2").setIndicator("방목록").setContent(new Intent(this,InquryActivity.class));
+        tabHost.addTab(tabSpecTab2);
         tabHost.getTabWidget().getChildAt(1).setBackgroundColor(Color.parseColor("#c8c8c8"));
 
-        TabHost.TabSpec tabSpecTab3 = tabHost.newTabSpec("TAB3").setIndicator("설정").setContent(new Intent(this,SignupActivity.class));
+        TabHost.TabSpec tabSpecTab3 = tabHost.newTabSpec("TAB3").setIndicator("설정").setContent(new Intent(this,ChattingActivity.class));
+        tabHost.addTab(tabSpecTab3);
         tabHost.getTabWidget().getChildAt(2).setBackgroundColor(Color.parseColor("#c8c8c8"));
 
         tabHost.setCurrentTab(0);
