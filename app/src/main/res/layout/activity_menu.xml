@@ -39,12 +39,13 @@
         android:layout_height="100dp"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_weight="0.53">
+        android:layout_weight="0.33">
 
         <Button
             android:layout_width="130dp"
             android:layout_height="70dp"
             android:text="방 만들기"
+            android:background="#40E0D0"
             android:id="@+id/bnt_make" />
 
         <Button
@@ -52,6 +53,7 @@
             android:layout_height="70dp"
             android:text="빨리타기"
             android:layout_marginLeft="30dp"
+            android:background="#40E0D0"
             android:id="@+id/bnt_fast" />
     </LinearLayout>
 
