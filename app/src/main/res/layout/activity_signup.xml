@@ -93,7 +93,8 @@
                 android:layout_marginLeft="30dp"
                 android:hint="E-mail"
                 android:layout_weight="1"
-                android:id="@+id/signup_email"/>
+                android:id="@+id/signup_email"
+                android:singleLine="true" />
 
             <Spinner
                 android:layout_width="100dp"
