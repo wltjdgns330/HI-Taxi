@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">HiTaxi_New</string>
     <string name="title_activity_chatting3">ChattingActivity3</string>
+    <string name="title_activity_chatting_room">ChattingRoomActivity</string>
 </resources>

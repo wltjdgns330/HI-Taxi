@@ -4,10 +4,11 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AlertDialog;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 
@@ -15,10 +16,12 @@ import android.widget.Toast;
  * Created by 이현주 on 2016-09-24.
  */
 public class MenuActivity extends ActionBarActivity {
+    //TextView ttx;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+        //ttx = (TextView)findViewById(R.id.txt_view);
 
         Button bt = (Button)findViewById(R.id.bnt_make);
         bt.setOnClickListener(new View.OnClickListener() {
@@ -44,23 +47,22 @@ public class MenuActivity extends ActionBarActivity {
                 builder.setPositiveButton("방만들기", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int which) {
-                        //EditText edit_name = (EditText)dialogView.findViewById(R.id.room_title);
-                        //RadioGroup rg = (RadioGroup)dialogView.findViewById(R.id.dialog_rg);
+                        EditText edit_name = (EditText)dialogView.findViewById(R.id.room_title);
+                        RadioGroup rg = (RadioGroup)dialogView.findViewById(R.id.dialog_rg);
 
-                        //String name = edit_name.getText().toString();
-                        //int checkedId = rg.getCheckedRadioButtonId();
+                        /*String name = edit_name.getText().toString();
+                        int checkedId = rg.getCheckedRadioButtonId();
+                        RadioButton rb = (RadioButton)rg.findViewById(checkedId);
+                        String number = rb.getText().toString();
 
-
-                        Log.i("t1","tt");
-                        //RadioButton rb = (RadioButton)rg.findViewById(checkedId);
-                        //String number = rb.getText().toString();
+                        ttx.append("방제목 : " + name + ", 방 인원 : " + number);*/
                     }
                 });
 
                 builder.setNegativeButton("취소", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int which) {
-                        Toast.makeText(MenuActivity.this, "방 만들기를 취소합니다", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MenuActivity.this, "방 만들기를 취소합니다", Toast.LENGTH_LONG).show();
                     }
                 });
 
