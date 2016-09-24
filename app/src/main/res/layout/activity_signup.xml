@@ -29,7 +29,8 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="60dp"
                 android:hint="이름을 입력하세요"
-                android:singleLine="true" />
+                android:singleLine="true"
+                android:id="@+id/signup_name"/>
 
         </LinearLayout>
 
@@ -47,6 +48,7 @@
                 android:layout_marginRight="60dp"/>
 
            <RadioGroup
+               android:id="@+id/rr"
                android:layout_width="200dp"
                android:layout_height="wrap_content"
                android:gravity="center"
@@ -56,13 +58,15 @@
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:layout_marginRight="50dp"
-                   android:text="남자"/>
+                   android:text="남자"
+                   android:id="@+id/boy"/>
 
                <RadioButton
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:layout_marginLeft="20dp"
-                   android:text="여자"/>
+                   android:text="여자"
+                   android:id="@+id/girl"/>
 
 
            </RadioGroup>
@@ -88,13 +92,14 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="30dp"
                 android:hint="E-mail"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:id="@+id/signup_email"/>
 
             <Spinner
                 android:layout_width="100dp"
                 android:layout_height="60dp"
-                android:id="@+id/spinner"
-                android:layout_weight="1" />
+                android:id="@+id/signup_spi"
+                android:layout_weight="1"/>
 
         </LinearLayout>
 
@@ -114,5 +119,11 @@
             android:id="@+id/signup_btn"/>
 
     </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvv"/>
 
 </LinearLayout>
