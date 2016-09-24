@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.sunghoon.hitaxi_new">
-    
+
     <uses-sdk
         android:minSdkVersion="15"
-        android:targetSdkVersion="8"/>
-    
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+        android:targetSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
 
     <application
         android:allowBackup="true"
@@ -23,8 +24,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MenuActivity"
-            android:label="메뉴"/>
+        <activity
+            android:name=".MenuActivity"
+            android:label="메뉴" />
         <activity
             android:name=".ChattingActivity"
             android:label="방목록" />
@@ -32,6 +34,7 @@
             android:name=".InquryActivity"
             android:label="문의사항" />
         <activity android:name=".MainTabActivity" />
+        <activity android:name=".HttpCommunication"></activity>
     </application>
 
 </manifest>
