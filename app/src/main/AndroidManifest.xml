@@ -34,7 +34,6 @@
             android:name=".InquryActivity"
             android:label="문의사항" />
         <activity android:name=".MainTabActivity" />
-        <activity android:name=".HttpCommunication"></activity>
     </application>
 
 </manifest>
